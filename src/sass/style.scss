@@ -1,0 +1,67 @@
+// functions
+@import "base/functions";
+
+
+// Bootstrap
+@import "vendors/bootstrap/stylesheets/bootstrap";
+
+
+// Base
+@import "base/config";
+@import "base/mixins";
+@import "base/fonts";
+
+
+// Utils
+@import "utils/u-utils";
+
+
+
+// Objects - patterns
+@import "objects/o-media";
+
+
+// Page
+@import "pages/p-page";
+
+
+
+// Layout
+@import "layout/l-pageHeader";
+@import "layout/l-pageNavigation";
+@import "layout/l-pageFooter";
+
+
+
+// Components
+@import "components/c-logo";
+@import "components/c-motto";
+@import "components/c-quickContact";
+@import "components/c-headerBadges";
+
+@import "components/c-menu";
+@import "components/c-hero";
+@import "components/c-features";
+
+@import "components/c-intro";
+@import "components/c-calculator";
+@import "components/c-phoneForm";
+
+@import "components/c-contact";
+@import "components/c-news";
+@import "components/c-quote";
+
+@import "components/c-box";
+
+@import "components/c-menuIcon";
+@import "components/c-dismissIcon";
+
+@import "components/c-reasons";
+@import "components/c-social";
+
+
+// Slick slider
+@import "vendors/slickslider/slick";
+@import "vendors/slickslider/slick-theme.scss";
+
+

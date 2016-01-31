@@ -1,0 +1,40 @@
+%box {
+	position: relative;
+
+	margin-bottom: rem(10);
+	padding: rem(20);
+
+	@include clearfix();
+}
+
+
+.c-box {
+	@extend %box;
+}
+
+
+.t-box--green {
+	@extend .c-box;
+
+	background-color: $lime;
+	h1, h2, h3,
+	h1 a, h2 a, h3 a {
+		color: $white;
+	}
+	p {
+		color: $gray-dark;
+	}
+}
+
+
+.t-box--gray {
+	@extend .c-box;
+	h1, h2, h3,
+	h1 a, h2 a, h3 a{
+		color: $lime;
+	}
+	p {
+		color: $white;
+	}
+	background-color: $gray-dark;
+}

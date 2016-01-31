@@ -1,0 +1,43 @@
+.c-reasons {
+	text-align: center;
+	background-color: $lime;
+
+	&__titleWrap {
+		&:after {
+			content: ' ';
+
+			display: block;
+			max-width: rem(140);
+			margin: 0 auto;
+			height: rem(2);
+
+			background-color: $lime-lighter;
+		}
+	}
+
+	&__title {
+		position: relative;
+		padding: rem(40);
+
+		color: $white;
+		line-height: 1.5;
+		@extend %heading-l;
+
+
+	}
+	&__item {
+		padding: rem(30) 0;
+
+		@media (min-width: $screen-sm) {
+			padding: rem(60) 0;
+		}
+	}
+	&__itemTitle {
+		color: $white;
+		@extend %heading-s;
+	}
+
+	&__img {
+		margin: 0 auto;
+	}
+}

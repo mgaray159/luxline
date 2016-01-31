@@ -1,0 +1,8 @@
+.c-intro {
+	&__title {
+		@extend %heading-xxl;
+	}
+	&__subtitle {
+		@extend %heading-m;
+	}
+}

@@ -1,0 +1,85 @@
+.c-hero {
+	background: $hero-pattern left top repeat-x;
+
+	@media (min-width: $screen-sm) {
+		padding-top:  rem(10);
+	}
+
+	&__slides {
+		position: relative;
+		z-index: 5;
+
+		&:before {
+			width: 100%;
+			height: rem(310);
+			margin-left: - rem(10);
+			margin-right: - rem(10);
+			@extend %beforeAfter;
+			z-index: 0;
+			background-color: $light-gray;
+
+			@media (min-width: $screen-sm) {
+				height: rem(250);
+			}
+
+			@media (min-width: $screen-md) {
+
+			}
+		}
+	}
+	&__slide{
+		position: relative;
+	}
+	&__imgContainer {
+		width: 100%;
+		height: rem(300);
+
+		margin-top: rem(10);
+
+		background: center center no-repeat;
+		background-size: cover;
+
+		@media (min-width: $screen-md) {
+			height: rem(350);
+		}
+	}
+	&__info {
+		position: absolute;
+		left:0;
+		bottom:0;
+
+		max-width: rem(570);
+	}
+	&__title,
+	&__subTitle {
+		display: inline-block;
+		padding: rem(10) rem(20);
+
+		color: $white;
+		font-weight: 700;
+		font-style: italic;
+	}
+	&__title {
+		font-size: rem(20);
+
+		background-color: $lime-transp;
+
+		@media (min-width: $screen-md) {
+			font-size: rem(26);
+		}
+	}
+	&__subTitle {
+
+		font-size: rem(15);
+
+		background-color: $gray-dark-transp;
+
+		@media (min-width: $screen-sm) {
+			margin-right: 80px;
+		}
+
+		@media (min-width: $screen-md) {
+			font-size: rem(19);
+		}
+	}
+}

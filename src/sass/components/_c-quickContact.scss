@@ -1,0 +1,41 @@
+.c-quickContact {
+	display: none;
+
+	padding-left: rem(80);
+
+	@media (min-width: $screen-sm) {
+		right: 0;
+		display: block;
+	}
+
+	@media (min-width: $screen-md) {
+		right: auto;
+	}
+
+	&:before {
+		content: " ";
+		position: absolute;
+		top: 2px;
+		left: 20px;
+
+		display: block;
+		@include square(rem(40));
+
+		background: $tel no-repeat;
+		background-size: cover;
+
+
+	}
+	&__tel {
+		display: block;
+
+		font-size: rem(20);
+		line-height: 1.2;
+	}
+	&__mail {
+		font-size: rem(16);
+		font-weight: 700;
+		line-height: 1.2;
+		text-decoration: none;
+	}
+}

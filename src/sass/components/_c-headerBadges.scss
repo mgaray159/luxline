@@ -1,0 +1,21 @@
+.c-headerBadges {
+
+	display: none;
+
+
+	@media (min-width: $screen-md) {
+		right: - $grid-gutter-width;
+
+		display: block;
+		height: rem(135);
+	}
+
+	&__img {
+		margin-right: rem(10);
+		@extend %respImg;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+
+
+// cross
+
+.c-dismissIcon {
+	float: right;
+	width: rem(50);
+	height: rem(50);
+
+	cursor: pointer;
+	background-color: transparent;
+
+
+	&__lines {
+
+		position: relative;
+		top: 50%;
+		left: 50%;
+
+		display: block;
+		width: rem(16);
+		height: rem(2);
+		margin-top: - rem(1);
+		margin-left: - rem(8);
+
+		background: transparent;
+
+
+
+		&:before, &:after {
+			content: ' ';
+
+			position: absolute;
+			top: 0;
+			left: rem(2);
+
+			display: block;
+			width: rem(16);
+			height: rem(2);
+
+			background: $white;
+			transform-origin: 50% 50%;
+
+			transition: transform .2s ease-out;
+
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+
+		&:hover {
+
+		}
+	}
+}
+

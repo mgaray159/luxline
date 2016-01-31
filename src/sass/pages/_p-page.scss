@@ -1,0 +1,11 @@
+.p-outer-wrap {
+	overflow: hidden;
+}
+
+.p-page {
+	transform: translateX(0);
+	transition: transform .6s ease;
+	&.is-open {
+		transform: translateX(rem(240));
+	}
+}

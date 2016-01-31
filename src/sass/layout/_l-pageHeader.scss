@@ -1,0 +1,12 @@
+.l-page-header {
+	height: rem(80);
+	@media (min-width: $screen-sm) {
+		height: rem(135);
+	}
+	&__col {
+		height: rem(80);
+		@media (min-width: $screen-sm) {
+			height: rem(135);
+		}
+	}
+}

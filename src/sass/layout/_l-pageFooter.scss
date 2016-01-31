@@ -1,0 +1,33 @@
+.l-pageFooter {
+	padding-top: rem(10);
+	text-align: center;
+	background-color: $gray-dark;
+
+	@media (min-width: $screen-sm) {
+		text-align: left;
+	}
+
+	&__title {
+		@extend %heading-m;
+	}
+	&__list {
+		margin-bottom: rem(25);
+	}
+	&__listItem {
+		color: $suva-gray;
+	}
+	&__listLink {
+		color: $pastel-gray;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__bottom {
+		border-top: rem(2) solid $masala;
+		padding: rem(10) 0;
+	}
+	&__copyright {
+		color: $suva-gray;
+	}
+}

@@ -1,0 +1,23 @@
+$image-margin: 15;
+
+.o-media {
+	overflow:hidden;
+	_overflow:visible;
+	zoom:1;
+
+	&__img {
+		float: left;
+		margin-right: rem($image-margin);
+		&--imgExt {
+			float: right;
+			margin-left: rem($image-margin);
+		}
+	}
+
+	&__body {
+		overflow:hidden;
+		_overflow:visible;
+		zoom:1;
+	}
+
+}

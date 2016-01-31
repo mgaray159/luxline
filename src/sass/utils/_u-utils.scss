@@ -1,0 +1,55 @@
+%o {
+	outline: 1px solid red;
+}
+.o {@extend %o;}
+
+
+%respImg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+%centerVertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	vertical-align: top;
+}
+
+.u-centerVertical {
+	@extend %centerVertical;
+}
+
+%beforeAfter {
+	content: " ";
+	display: block;
+	position: absolute;
+}
+
+.u-mt0 {
+	margin-top: 0;
+}
+.u-mt10 {
+	margin-top: 10px;
+}
+.u-mb0 {
+	margin-bottom: 0;
+}
+.u-mb20 {
+	margin-bottom: rem(20);
+}
+.u-mh-20 {
+	margin-left: - rem(20);
+	margin-right: - rem(20);
+}
+
+.u-pv10 {
+	padding-top: rem(10);
+	padding-bottom: rem(10);
+}
+.u-pv20 {
+	padding-top: rem(20);
+	padding-bottom: rem(20);
+}

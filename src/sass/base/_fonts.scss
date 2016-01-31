@@ -1,0 +1,48 @@
+h1, h4 {
+	font-weight: 700;
+}
+
+h1, h2, h3 {
+	color: $lime;
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+blockquote {
+	margin: 0;
+}
+
+%heading-xxl {
+	font-size: rem(28);
+	font-weight: 700;
+}
+%heading-xl {
+	font-size: rem(26);
+	font-weight: 500;
+}
+%heading-l {
+	font-size: rem(24);
+}
+%heading-m {
+	font-size: rem(20);
+}
+%heading-s {
+	font-size: rem(18);
+	font-weight: 700;
+}
+%heading-xs {
+	font-size: rem(16);
+	font-weight: 700;
+}
+
+
+%text-l {
+	font-size: rem(18);
+}
+.text-l {
+	@extend %text-l;
+}
+

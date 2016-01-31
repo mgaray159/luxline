@@ -1,0 +1,28 @@
+.c-calculator {
+
+	background: $calculator right top no-repeat;
+	background-size: auto 100%;
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__title {
+
+		@extend %heading-xxl;
+
+
+		&:after {
+			@media (min-width: 479px) {
+				content: " ";
+				display: inline-block;
+				@include size(rem(9), rem(16));
+				margin-left: rem(20);
+
+				background: $link-arrows left bottom;
+				background-size: 100% auto;
+			}
+		}
+	}
+
+}

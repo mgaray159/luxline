@@ -1,0 +1,47 @@
+.c-social {
+	display: inline-block;
+	text-align: center;
+	padding-top: rem(5);
+	margin: 0 auto rem(15);
+
+	@media (min-width: $screen-sm) {
+		margin-bottom: 0;
+	}
+
+	&__item {
+		float: left;
+		margin-right: rem(7);
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+	&__link {
+
+		display: block;
+		@include square(rem(38));
+
+		@include hide-text();
+
+		background: $socials no-repeat;
+
+		&--fb {
+			background-position: left top;
+			&:hover {
+				background-position: left bottom;
+			}
+		}
+		&--g {
+			background-position: - rem(38) top;
+			&:hover {
+				background-position: - rem(38) bottom;
+			}
+		}
+		&--ytube {
+			background-position: right top;
+			&:hover {
+				background-position: right bottom;
+			}
+		}
+	}
+
+}

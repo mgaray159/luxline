@@ -1,0 +1,45 @@
+$calculator-btn-width: 110;
+
+.c-phoneForm {
+
+	background: $helpline right top no-repeat;
+	background-size: auto 100%;
+
+	&__title {
+		@extend %heading-xxl;
+	}
+
+	&__fromWrapper {
+		position: relative;
+	}
+
+	&__controlWrap {
+		margin-bottom: rem(10);
+
+		@media (min-width: 479px) {
+			margin-right: rem($calculator-btn-width + 20);
+			margin-bottom: 0;
+		}
+	}
+	&__input {
+
+		@media (min-width: 479px) {
+
+		}
+	}
+
+	&__btn {
+
+		float: right;
+		padding: rem(7) rem(12);
+
+		@media (min-width: 479px) {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			float: none;
+			width: rem($calculator-btn-width);
+		}
+	}
+}

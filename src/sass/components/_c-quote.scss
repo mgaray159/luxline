@@ -1,0 +1,29 @@
+.c-quote {
+	position: relative;
+	&:after {
+		@extend %beforeAfter;
+		top: 0;
+		right: rem(10);
+		@include square(rem(40));
+
+		background: $quotes no-repeat;
+		background-size: cover;
+	}
+
+	&__title {
+		margin-right: rem(90);
+		margin-bottom: rem(30);
+
+		@extend %heading-xl;
+	}
+
+	&__text, &__author, &__place  {
+		font-style: italic;
+	}
+
+	&__author {
+		display: block;
+		font-weight: 700;
+	}
+
+}
