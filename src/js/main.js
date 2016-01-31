@@ -1,7 +1,7 @@
+(function() {
+    var mobNav = new MobileNavigation();
+})();
 
-var mobNav = new MobileNavigation();
-
-mobNav;
 
 $(function() {
     $('.c-hero__slides').slick({

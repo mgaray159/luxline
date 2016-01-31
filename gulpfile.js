@@ -15,7 +15,7 @@ var notify = require('gulp-notify');
 
 // scripts task
 gulp.task('scripts', function(){
-    return gulp.src('./src/js/*.js')
+    return gulp.src(['./src/js/classie.js', './src/js/slick.js', './src/js/menu.js', './src/js/main.js'])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./dist/js/'))
         .pipe(uglify())
